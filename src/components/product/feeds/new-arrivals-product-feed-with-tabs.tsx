@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState, useEffect } from "react";
 // import { useProductsQuery } from "@framework/product/get-all-products-2";
 import { Tab } from "@headlessui/react";

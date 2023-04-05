@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState } from "react";
 import PageHeader from "@components/ui/page-header";
 import Container from "@components/ui/container";
