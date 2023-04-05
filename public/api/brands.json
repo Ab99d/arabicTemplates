@@ -1,0 +1,66 @@
+{
+  "brands": [
+    {
+      "id": 1,
+      "name": "PDF",
+      "slug": "PDF",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/shovia.png",
+        "original": "/assets/images/brands/shovia.png"
+      }
+    },
+    {
+      "id": 2,
+      "name": "AI",
+      "slug": "AI",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fusion.png",
+        "original": "/assets/images/brands/fusion.png"
+      }
+    },
+    {
+      "id": 3,
+      "name": "PSD",
+      "slug": "PSD",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/hunter-shoes.png",
+        "original": "/assets/images/brands/hunter-shoes.png"
+      }
+    }
+  ],
+  "brandsGrid": [
+    {
+      "id": 1,
+      "name": "PDF",
+      "slug": "PDF",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/shovia.png",
+        "original": "/assets/images/brands/shovia.png"
+      }
+    },
+    {
+      "id": 2,
+      "name": "AI",
+      "slug": "AI",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/fusion.png",
+        "original": "/assets/images/brands/fusion.png"
+      }
+    },
+    {
+      "id": 3,
+      "name": "PSD",
+      "slug": "PSD",
+      "image": {
+        "id": 1,
+        "thumbnail": "/assets/images/brands/hunter-shoes.png",
+        "original": "/assets/images/brands/hunter-shoes.png"
+      }
+    }
+  ]
+}

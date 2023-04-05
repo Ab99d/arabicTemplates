@@ -1,0 +1,36 @@
+import { useState } from "react";
+import Container from "@components/ui/container";
+import { IoClose } from "react-icons/io5";
+import { useTranslation } from "next-i18next";
+
+const ShopDiscount: React.FC<{ category?: string | string[] }> = ({
+  category = "Category",
+}) => {
+  const [status, setStatus] = useState(false);
+  const hide = () => {
+    setStatus(true);
+  };
+  const { t } = useTranslation("common");
+  return (
+    <div
+      className={`flex justify-center relative bg-borderBottom transition duration-200 ease-in ${
+        status === true ? "h-0.5" : "py-4"
+      }`}
+    >
+      {/* <Container className={status === true ? "opacity-0 invisible" : "w-full"}>
+				<div className="relative text-center text-heading text-xs md:text-sm leading-6 md:leading-7 px-8">
+					You found <span className="font-bold">1200</span> results for <span className="font-bold">{category}</span>
+					<button
+						className="absolute h-full end-0 top-0 flex text-lg md:text-2xl items-center justify-center text-gray-500 opacity-50 focus:outline-none transition-opacity hover:opacity-100"
+						onClick={hide}
+						aria-label="close"
+					>
+						<IoClose className="text-black" />
+					</button>
+				</div>
+			</Container> */}
+    </div>
+  );
+};
+
+export default ShopDiscount;
