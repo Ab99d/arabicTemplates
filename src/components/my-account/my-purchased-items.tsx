@@ -5,7 +5,7 @@ import { fadeInTop } from "@utils/motion/fade-in-top";
 import Link from "@components/ui/link";
 import { useWindowSize } from "@utils/use-window-size";
 import { useTranslation } from "next-i18next";
-import { WithContext as ReactTags } from "react-tag-input";
+// import { WithContext as ReactTags } from "react-tag-input";
 import axios from "axios";
 
 const PurchasedItems: React.FC = () => {
@@ -18,32 +18,32 @@ const PurchasedItems: React.FC = () => {
   };
 
   // get tags
-  const delimiters = [KeyCodes.comma, KeyCodes.enter];
-  const [tags, setTags] = React.useState([]);
-  var tagsArray: any = [];
-  const handleAddition = (tag: any) => {
-    setTags([...tags, tag]);
-  };
-  const handleTagClick = (index: any) => {
-    console.log("The tag at index " + index + " was clicked");
-  };
-  const handleDrag = (tag: any, currPos: any, newPos: any) => {
-    const newTags = tags.slice();
-    newTags.splice(currPos, 1);
-    newTags.splice(newPos, 0, tag);
-    // re-render
-    setTags(newTags);
-  };
-  const handleDelete = (i: any) => {
-    setTags(tags.filter((tag, index) => index !== i));
-  };
-  const getArrayFromTags = () => {
-    tags.map((i) => {
-      tagsArray.push(i.text);
-    });
-  };
-  getArrayFromTags();
-  console.log(tagsArray);
+  // const delimiters = [KeyCodes.comma, KeyCodes.enter];
+  // const [tags, setTags] = React.useState([]);
+  // var tagsArray: any = [];
+  // const handleAddition = (tag: any) => {
+  //   setTags([...tags, tag]);
+  // };
+  // const handleTagClick = (index: any) => {
+  //   console.log("The tag at index " + index + " was clicked");
+  // };
+  // const handleDrag = (tag: any, currPos: any, newPos: any) => {
+  //   const newTags = tags.slice();
+  //   newTags.splice(currPos, 1);
+  //   newTags.splice(newPos, 0, tag);
+  //   // re-render
+  //   setTags(newTags);
+  // };
+  // const handleDelete = (i: any) => {
+  //   setTags(tags.filter((tag, index) => index !== i));
+  // };
+  // const getArrayFromTags = () => {
+  //   tags.map((i) => {
+  //     tagsArray.push(i.text);
+  //   });
+  // };
+  // getArrayFromTags();
+  // console.log(tagsArray);
 
   // get file name
   //   const [postUrl, setPostUrl] = React.useState("");
@@ -219,7 +219,7 @@ const PurchasedItems: React.FC = () => {
             </div>
           </div>
           {/* /////////////////////////////////////////////////////////////////////////////////// */}
-          <div
+          {/* <div
             style={{
               width: "100%",
               margin: ".5rem",
@@ -243,7 +243,7 @@ const PurchasedItems: React.FC = () => {
                 autocomplete
               />
             </div>
-          </div>
+          </div> */}
         </form>
       </motion.div>
     </>
