@@ -1,16 +1,17 @@
-// @ts-nocheck
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeInTop } from "@utils/motion/fade-in-top";
 import Link from "@components/ui/link";
 import { useWindowSize } from "@utils/use-window-size";
 import { useTranslation } from "next-i18next";
-// import { WithContext as ReactTags } from "react-tag-input";
+import { TagsInput } from "react-tag-input-component";
+// import { WithContext as ReactTags } from "@types/react-tag-input";
 import axios from "axios";
 
 const PurchasedItems: React.FC = () => {
   const { width } = useWindowSize();
   const { t } = useTranslation("common");
+  const [selected, setSelected] = React.useState(["Modern"]);
 
   const KeyCodes = {
     comma: 188,
@@ -80,20 +81,21 @@ const PurchasedItems: React.FC = () => {
     //   .catch((error) => {
     //     console.error(error.message);
     //   });
+    // var headers: any = {
+    //     "Access-Control-Allow-Origin": "*",
+    // }
     var requestOptions: any = {
       method: "PUT",
       body: file,
       redirect: "follow",
     };
-    // var headers: any = {
-    //     "Access-Control-Allow-Origin": "*",
-    // }
     fetch(URL, requestOptions)
       .then((response) => response.text())
       .then((result) => console.log(result))
       .catch((error) => console.log("error", error));
   }
 
+  console.log(selected);
   return (
     <>
       <h2 className="text-lg md:text-xl xl:text-2xl font-bold text-heading mb-6 xl:mb-8">
@@ -244,6 +246,17 @@ const PurchasedItems: React.FC = () => {
               />
             </div>
           </div> */}
+          <div>
+            <h1>Add Fruits</h1>
+            <pre>{JSON.stringify(selected)}</pre>
+            <TagsInput
+              value={selected}
+              onChange={setSelected}
+              name="fruits"
+              placeHolder="enter fruits"
+            />
+            <em>press enter or comma to add new tag</em>
+          </div>
         </form>
       </motion.div>
     </>

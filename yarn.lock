@@ -1291,13 +1291,6 @@
   dependencies:
     "react-tabs" "*"
 
-"@types/react-tag-input@^6.6.1":
-  "integrity" "sha512-IaCnZu4gplbt2pR+3bD/yy9SdzsuT+fTOLeJcwYuyBw0aoHAuiTg8lKPii1fPPrV+nisxOWU3SmEqL9VwqaXuw=="
-  "resolved" "https://registry.npmjs.org/@types/react-tag-input/-/react-tag-input-6.6.1.tgz"
-  "version" "6.6.1"
-  dependencies:
-    "@types/react" "*"
-
 "@types/react@*", "@types/react@^16.8 || ^17.0 || ^18.0", "@types/react@18.0.25":
   "integrity" "sha512-xD6c0KDT4m7n9uD4ZHi02lzskaiqcBxf4zi+tXZY98a04wvc0hi/TcCPC2FOESZi51Nd7tlUeOJY8RofL799/g=="
   "resolved" "https://registry.npmjs.org/@types/react/-/react-18.0.25.tgz"
@@ -3423,6 +3416,11 @@
   dependencies:
     "clsx" "^1.1.0"
     "prop-types" "^15.5.0"
+
+"react-tag-input-component@^2.0.2":
+  "integrity" "sha512-dydI9luVwwv9vrjE5u1TTnkcOVkOVL6mhFti8r6hLi78V2F2EKWQOLptURz79UYbDHLSk6tnbvGl8FE+sMpADg=="
+  "resolved" "https://registry.npmjs.org/react-tag-input-component/-/react-tag-input-component-2.0.2.tgz"
+  "version" "2.0.2"
 
 "react-toastify@^9.1.1":
   "integrity" "sha512-pkFCla1z3ve045qvjEmn2xOJOy4ZciwRXm1oMPULVkELi5aJdHCN/FHnuqXq8IwGDLB7PPk2/J6uP9D8ejuiRw=="
